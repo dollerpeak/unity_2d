@@ -1,20 +1,8 @@
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class CarController : MonoBehaviour
 {
-    // https://github.com/gilbutITbook/080267
-
-
-    private void Awake()
-    {
-        
-    }
-
-    private void OnEnable()
-    {
-        
-    }
-
+    float speed = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +13,11 @@ public class test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (true == Input.GetMouseButtonDown(0))
+        {
+            speed = 0.2f;
+        }
+        transform.Translate(speed,0,0);
+        speed *= 0.98f;
     }
 }
