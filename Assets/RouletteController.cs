@@ -1,21 +1,7 @@
 using UnityEngine;
 
-public class test : MonoBehaviour
+public class RouletteController : MonoBehaviour
 {
-    // https://github.com/gilbutITbook/080267
-
-
-    private void Awake()
-    {
-        
-    }
-
-    private void OnEnable()
-    {
-        
-    }
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
