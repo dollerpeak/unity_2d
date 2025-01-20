@@ -3,6 +3,7 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
     float speed = 0;
+    Vector2 startPos;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,7 +16,14 @@ public class CarController : MonoBehaviour
     {
         if (true == Input.GetMouseButtonDown(0))
         {
-            speed = 0.2f;
+            startPos = Input.mousePosition;
+        }
+        else if (true == Input.GetMouseButtonUp(0))
+        {
+            Vector2 endPos = Input.mousePosition;
+            float swipeLength = endPos.x - startPos.x;
+
+            speed = swipeLength / 4000f;
         }
         transform.Translate(speed,0,0);
         speed *= 0.98f;
