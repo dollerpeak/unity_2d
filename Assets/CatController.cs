@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class CatController : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,4 +23,16 @@ public class PlayerController : MonoBehaviour
         //Debug.Log(Time.deltaTime);
 
     }
+
+    public void LButtonDown()
+    {
+        transform.Translate(-3, 0, 0);
+    }
+
+    public void RButtonDown()
+    {
+        transform.Translate(3, 0, 0);
+    }
+
+
 }

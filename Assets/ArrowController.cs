@@ -30,6 +30,9 @@ public class ArrowController : MonoBehaviour
 
         if (crashDir < crashArrow + crashCat)
         {
+            GameObject director = GameObject.Find("Director");
+            director.GetComponent<CatDirector>().damage();
+
             Destroy (this.gameObject);
         }
 
