@@ -24,6 +24,10 @@ public class SkyController : MonoBehaviour
         {
             rigidbody2D.AddForce(transform.up * jumpForce);
         }
+        if (Input.GetMouseButtonDown(0) && rigidbody2D.linearVelocity.y == 0)
+        {
+            rigidbody2D.AddForce(transform.up * jumpForce);
+        }
 
         int key = 0;
         if (Input.GetKey(KeyCode.RightArrow))
