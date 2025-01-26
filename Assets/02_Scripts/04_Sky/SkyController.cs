@@ -58,7 +58,14 @@ public class SkyController : MonoBehaviour
             transform.localScale = new Vector3(key, 1, 1);
         }
 
-        animator.speed = speedx / 2.0f;
+        if (rigidbody2D.linearVelocity.y == 0)
+        {
+            animator.speed = speedx / 2.0f;
+        } else
+        {
+            animator.speed = 1.0f;
+        }
+            
 
         if(transform.position.y < -10)
         {
