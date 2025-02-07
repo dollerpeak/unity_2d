@@ -75,7 +75,7 @@ public class SkyController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("골~~~~, 유티에프8테스트");
+        Debug.Log("골~~~~, 유티에프8테스트, 테스트");
         SceneManager.LoadScene("ClearScene");
     }
 
