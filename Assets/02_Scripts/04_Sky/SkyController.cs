@@ -74,9 +74,19 @@ public class SkyController : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("╟Я~~~~, ю╞ф╪©║га8ев╫╨ф╝, ев╫╨ф╝");
+    {        
+        Debug.Log("ЙЁ╗~~~~, Л°═М▀╟Л≈░М■└8М┘▄Л┼╓М┼╦, М┘▄Л┼╓М┼╦");
         SceneManager.LoadScene("ClearScene");
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        
     }
 
 
